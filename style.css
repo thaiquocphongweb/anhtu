@@ -98,7 +98,7 @@ li a:hover {
 
 #city {
   text-align: center;
-  background-image: url("/images/anh-ha-noi.jpg");
+  background-image: url("images/anh-ha-noi.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
