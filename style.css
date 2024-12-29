@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Playpen+Sans:wght@100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@400..700&family=Playpen+Sans:wght@100..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----Css Banner (class(.); id(#); tag name) -SELECTOR CSS---*/
+
+.carousel-item img {
+  height: 100%;
+}
+
+/*-----Css Menu (class(.); id(#); tag name) -SELECTOR CSS---*/
+
+nav {
+  background-color: #757cdb;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 12px 25px;
+}
+
+li a:hover {
+  background-color: #edf11e;
+  border-radius: 10px;
+  color: red;
+}
+
+/*-----Css vê tôi (class(.); id(#); tag name) -SELECTOR CSS---*/
+
+#about {
+  text-align: center;
+  background-color: #a6a6dd;
+}
+
+#about h1 {
+  font-size: 40px;
+  color: red;
+  animation: chuyenmau 1s infinite;
+  font-family: "Playpen Sans", cursive;
+}
+
+#about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 5px 5px blue;
+}
+
+#about img:hover {
+  scale: 1.2;
+}
+
+#about p {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+}
+
+@keyframes chuyenmau {
+  0% {
+    color: #ffffff;
+  }
+
+  50% {
+    color: #3131d3;
+  }
+
+  70% {
+    color: #c8dd5f;
+  }
+
+  100% {
+    color: #e86464;
+  }
+}
+
+/*-----Css về Thành phố  ----*/
+
+#city {
+  text-align: center;
+  background-image: url("/images/anh-ha-noi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+#city h2 {
+  font-size: 35px;
+  color: #ee9349;
+  font-family: "Playpen Sans", cursive;
+}
+
+#city p {
+  font-size: 30px;
+  color: #ee9349;
+  font-family: "Dancing Script", cursive;
+  padding-top: 80px;
+}
+
+/*-----Css về sở thích  ----*/
+#interest {
+  background-color: #c0f7c0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#interest h2 {
+  color: white;
+  padding-top: 10px;
+  height: 40px;
+  font-family: cursive;
+}
+
+.picture-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.picture-items img {
+  width: 18%;
+  height: 160px;
+  box-shadow: 10px 10px #cde675;
+  border: 4px dashed #f73636;
+
+}
+
+.picture-items img:hover {
+  transform: translateY(-16px);
+}
+
+#interest h4 {
+  font-size: 30px;
+  color: white;
+  font-family: cursive;
+}
+
+#interest p {
+  color: white;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+/*----CSS of project------*/
+
+#project {
+  text-align: center;
+  background: linear-gradient(to right, #a0c4ff, #5b84f5);
+  border-radius: 10px;
+}
+
+#project span {
+  padding-top: 10px;
+  background: linear-gradient(10deg, #e8bbbb, #bebeee, #89c289);
+  color: red;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+#project h4 {
+  font-size: 30px;
+  color: #ed5050;
+  font-family: cursive;
+}
+
+.row-showing {
+  display: flex;
+}
+
+.image-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-items img {
+  width: 50%;
+  height: 100%;
+  border: 4px dashed #f73636;
+}
+
+.text-description {
+  display: none;
+}
+
+.image-items:hover .text-description {
+  display: block;
+  font-size: 18px;
+  position: absolute;
+  color: #31bf31;
+  margin-top: 80px;
+  width: 50%;
+}
+
+.overplay {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(177, 237, 233, 0.5);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-items:hover .overplay {
+  display: block;
+}
+
+#project p {
+  font-size: 30px;
+  color: #f5b8b8;
+  font-family: "Dancing Script", cursive;
+}
+
+/*----CSS of Contact------*/
+
+#contact {
+  text-align: center;
+  background: linear-gradient(to right, #e2f2c5, #eff77e);
+  border-radius: 10px;
+}
+
+#contact h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Playpen Sans", cursive;
+  color: #757cdb;
+  animation: ten_animation 3s infinite;
+}
+
+#contact marquee img {
+  width: 12%;
+  height: 12%;
+  margin-right: 20px;
+}
+
+/*----CSS of Footer------*/
+
+.wrapper {
+  position: relative;
+  background: linear-gradient(10deg, #457687, #757cda, #89c289);
+  min-height: 250px;
+}
+
+.custom-shape-divider-top-1731208264 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1731208264 svg {
+  position: relative;
+  display: block;
+  width: calc(172% + 1.3px);
+  height: 42px;
+}
+
+.custom-shape-divider-top-1731208264 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.columns div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.columns div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+
+/*----CSS of RESPONSIVE------*/
+
+/*----Kích thước của Mobile------*/
+@media screen and (max-width: 768px) {
+  #city h2 {
+    font-size: 30px;
+  }
+
+  #city p {
+    font-size: 19.5px;
+    padding-top: 1px;
+  }
+
+  .row-showing {
+    display: block;
+  }
+
+  .image-items {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .image-items img {
+    width: 50%;
+    height: 100%;
+    border: 4px dashed #f73636;
+  }
+
+  .text-description {
+    display: none;
+  }
+
+  .image-items:hover .text-description {
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    color: #31bf31;
+    top: 0;
+    left: 25%;
+    width: 50%;
+  }
+
+  .overplay {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(177, 237, 233, 0.5);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .image-items:hover .overplay {
+    display: block;
+  }
+
+  #project p {
+    font-size: 30px;
+    color: #f5b8b8;
+    font-family: "Dancing Script", cursive;
+  }
+
+}
+
+/*----Kích thước của Tablet------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #city p {
+    font-size: 28px;
+    padding-top: 60px;
+  }
+}
